@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idly Recipes</title>
+    <style>
+        body {
+            font-family: 'Garamond', 'Times New Roman', serif;
+            background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .recipe-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .recipe-card:hover {
+            transform: scale(1.02);
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-bottom: 5px solid #28a745;
+        }
+
+        .recipe-content {
+            padding: 1.5rem;
+            text-align: left;
+            background-color: #f9f9f9;
+            border-radius: 0 0 12px 12px;
+        }
+
+        .recipe-content h2 {
+            color: #28a745;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-transform: capitalize;
+        }
+
+        .recipe-content p {
+            color: #555;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 1.4rem;
+            margin-top: 1.5rem;
+        }
+
+        .recipe-content ul {
+            padding-left: 20px;
+        }
+
+        .recipe-content ul li {
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .recipe-content ol {
+            padding-left: 20px;
+            margin-bottom: 1.5rem;
+        }
+
+        .recipe-content ol li {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .recipe-content ol li:hover {
+            color: #28a745;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #28a745;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            font-size: 1.2rem;
+        }
+
+        footer a {
+            color: #28a745;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #218838;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            background-color: #28a745;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            margin: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #218838;
+        }
+
+        .ingredients {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+        }
+
+        .ingredients ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .ingredients ul li {
+            padding: 0.5rem 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Classic Idli Recipe</h1>
+    </header>
+    <nav>
+        <a href="book.html">Recipe Journal</a>
+        <a href="idly.html">Idli Recipes</a>
+    </nav>
+    <div class="container">
+        <div class="recipe-card">
+            <img src="idly.jpeg" alt="Classic Idli">
+            <div class="recipe-content">
+                <h2>Classic Idli</h2>
+                <p>Classic Idli is a soft and fluffy steamed rice cake made from fermented rice and urad dal batter. It’s a perfect breakfast or snack option, often paired with chutney and sambar.</p>
+                <div class="ingredients">
+                    <h3>Ingredients:</h3>
+                    <ul>
+                        <li>1 cup rice (preferably idli rice)</li>
+                        <li>1/4 cup urad dal (skinned black gram)</li>
+                        <li>1/4 teaspoon fenugreek seeds (optional)</li>
+                        <li>Water (for soaking and grinding)</li>
+                        <li>Salt (to taste)</li>
+                    </ul>
+                </div>
+                <div class="instructions">
+                    <h3>Instructions:</h3>
+                    <ol>
+                        <li>Soak the rice, urad dal, and fenugreek seeds (if using) in water for 4-6 hours.</li>
+                        <li>Drain and grind the soaked ingredients to a smooth batter, adding water as needed.</li>
+                        <li>Let the batter ferment for 8-12 hours or overnight in a warm place.</li>
+                        <li>Once fermented, add salt and stir gently.</li>
+                        <li>Grease the idli molds and pour the batter into each mold.</li>
+                        <li>Steam the idlis for 10-12 minutes until cooked through.</li>
+                        <li>Serve hot with coconut chutney and sambar.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Pyrotic by Savio Praneeth - Keep Exploring!</p>
+    </footer>
+</body>
+</html>

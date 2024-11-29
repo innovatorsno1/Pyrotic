@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idli Recipes</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+            color: #333;
+        }
+        header {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .recipe-section {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .recipe-section img {
+            width: 100%;
+            max-width: 350px;
+            object-fit: cover;
+        }
+        .recipe-content {
+            padding: 1.5rem;
+            flex: 1;
+        }
+        .recipe-content h2 {
+            color: #28a745;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .recipe-content p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .recipe-content a {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .recipe-content a:hover {
+            background: #218838;
+        }
+        footer {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+   nav {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        nav a {
+            text-decoration: none;
+            background-color: #28a745;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 8px;
+            margin: 1rem;
+        }
+        nav a:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Idli Recipes</h1>
+        <p>Explore a variety of soft, fluffy idli recipes for every taste!</p>
+    </header>
+<nav>
+        <a href="book.html">Recipe journal</a>
+    </nav>
+    <div class="container">
+        <!-- Classic Idli -->
+        <section class="recipe-section">
+            <img src="idly.jpeg" alt="Classic Idli">
+            <div class="recipe-content">
+                <h2>Classic Idli</h2>
+                <p>Master the traditional recipe for idlis that are soft, fluffy, and delicious. Perfect for breakfast!</p>
+                <a href="clasic.html">View Recipe</a>
+            </div>
+        </section>
+
+        <!-- Rava Idli -->
+        <section class="recipe-section">
+            <img src="rava.jpeg" alt="Rava Idli">
+            <div class="recipe-content">
+                <h2>Rava Idli</h2>
+                <p>Quick and easy to make, rava idlis are a semolina-based variation that’s perfect for busy mornings.</p>
+                <a href="rava.html">View Recipe</a>
+            </div>
+        </section>
+
+        <!-- Stuffed Idli -->
+        <section class="recipe-section">
+            <img src="stuffed.jpeg" alt="Stuffed Idli">
+            <div class="recipe-content">
+                <h2>Stuffed Idli</h2>
+                <p>Elevate your idli game with a spicy, savory stuffing that adds a modern twist to this classic dish.</p>
+                <a href="stuffe.html">View Recipe</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy;2024 Pyrotic by Savio Praneeth - Keep Exploring!</p>
+    </footer>
+</body>
+</html>
+

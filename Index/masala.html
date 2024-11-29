@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dosa Recipes</title>
+    <style>
+        body {
+            font-family: 'Garamond', 'Times New Roman', serif;
+            background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .recipe-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .recipe-card:hover {
+            transform: scale(1.02);
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-bottom: 5px solid #28a745;
+        }
+
+        .recipe-content {
+            padding: 1.5rem;
+            text-align: left;
+            background-color: #f9f9f9;
+            border-radius: 0 0 12px 12px;
+        }
+
+        .recipe-content h2 {
+            color: #28a745;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-transform: capitalize;
+        }
+
+        .recipe-content p {
+            color: #555;
+            line-height: 1.7;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 1.4rem;
+            margin-top: 1.5rem;
+        }
+
+        .recipe-content ul {
+            padding-left: 20px;
+        }
+
+        .recipe-content ul li {
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .recipe-content ol {
+            padding-left: 20px;
+            margin-bottom: 1.5rem;
+        }
+
+        .recipe-content ol li {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .recipe-content ol li:hover {
+            color: #28a745;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #28a745;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            font-size: 1.2rem;
+        }
+
+        footer a {
+            color: #28a745;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #218838;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            background-color: #28a745;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            margin: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #218838;
+        }
+
+        .ingredients {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+        }
+
+        .ingredients ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .ingredients ul li {
+            padding: 0.5rem 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dosa Recipes</h1>
+    </header>
+     <nav>
+        <a href="book.html">Recipe Journal</a>
+        <a href="dosa.html">Dosa Recipes</a>
+    </nav>
+    <div class="container">
+        <!-- Recipe Card for Masala Dosa -->
+        <div class="recipe-card">
+            <img src="masaladosa.jpeg" alt="Masala Dosa">
+            <div class="recipe-content">
+                <h2>Masala Dosa</h2>
+                <p>Masala dosa is a savory, crispy, and delicious South Indian pancake filled with a spiced potato mixture. It's perfect for breakfast or dinner, often served with coconut chutney and tangy sambar. Learn how to make this iconic dish at home!</p>
+                <div class="ingredients">
+                    <h3>Ingredients:</h3>
+                    <ul>
+                        <li>1 cup rice (preferably short-grain or idli rice)</li>
+                        <li>1/4 cup split urad dal (skinned black gram)</li>
+                        <li>1/4 teaspoon fenugreek seeds (optional)</li>
+                        <li>Water (for soaking and grinding)</li>
+                        <li>Salt (to taste)</li>
+                        <li>Oil or ghee (for cooking)</li>
+                        <li>For Masala Filling:</li>
+                        <li>4 medium potatoes, boiled and mashed</li>
+                        <li>1 onion, finely chopped</li>
+                        <li>2 green chilies, chopped</li>
+                        <li>1 teaspoon mustard seeds</li>
+                        <li>1 teaspoon turmeric powder</li>
+                        <li>1 teaspoon cumin seeds</li>
+                        <li>1/4 teaspoon asafoetida (hing)</li>
+                        <li>1 tablespoon oil</li>
+                        <li>Fresh coriander leaves, chopped (for garnish)</li>
+                    </ul>
+                </div>
+                <h3>Instructions:</h3>
+                <ol>
+                    <li>Soak the rice, urad dal, and fenugreek seeds (if using) in water for 4-6 hours or overnight.</li>
+                    <li>Drain and blend the ingredients with a little water to form a smooth batter.</li>
+                    <li>Allow the batter to ferment in a warm place for 8-12 hours or overnight.</li>
+                    <li>Once fermented, add salt to taste and stir gently.</li>
+                    <li>For the masala filling: Heat oil in a pan, add mustard seeds, cumin, asafoetida, and sauté until fragrant.</li>
+                    <li>Add chopped onions and green chilies, and cook until soft.</li>
+                    <li>Stir in turmeric powder, and add the mashed potatoes. Mix well, cook for a few minutes, and then garnish with fresh coriander leaves.</li>
+                    <li>Heat a tawa, grease it with oil or ghee, and pour a ladleful of batter, spreading it in a circular motion.</li>
+                    <li>Cook until golden brown, then place a spoonful of the masala filling in the center. Fold the dosa and serve hot.</li>
+                </ol>
+       
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pyrotic by Savio Praneeth - Keep Exploring! <a href="book.html">Back to All Recipes</a></p>
+    </footer>
+</body>
+</html>
